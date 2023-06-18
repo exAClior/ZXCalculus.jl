@@ -12,7 +12,9 @@ end
 
 function _round_phase_dict!(ps::Dict{T,P}) where {T<:Integer,P}
     for v in keys(ps)
-        ps[v] = rem(rem(ps[v], 2) + 2, 2)
+        ps[v] = rem(ps[v], 2)
+        ps[v] += 2
+        ps[v] = rem(ps[v], 2)
     end
     return
 end
