@@ -32,8 +32,6 @@ include("zx_graph.jl")
 
 include("zxw_diagram.jl")
 
-include("utils.jl")
-
 include("rules.jl")
 include("simplify.jl")
 include("circuit_extraction.jl")
